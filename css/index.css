@@ -137,7 +137,7 @@ html {
 }
 html,
 body {
-  font-family: 'arial', sans-serif;
+  font-family: 'Thasadith', sans-serif;
 }
 h1,
 h2,
@@ -147,13 +147,17 @@ h5 {
   font-family: 'arial';
 }
 h1 {
-  font-size: 4rem;
-  font-family: 'arial', sans-serif;
+  font-size: 6rem;
+  font-family: 'Calistoga', cursive;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
   padding-bottom: 10px;
-  font-family: 'arial', sans-serif;
+  font-family: 'Cormorant Infant', serif;
+}
+h3 {
+  font-size: 3.5rem;
+  font-family: 'Codystar', cursive;
 }
 h4 {
   font-size: 2.5rem;
@@ -162,9 +166,9 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding-bottom: 10px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 img {
   max-width: 100%;
@@ -183,6 +187,9 @@ nav {
   margin: auto;
   padding: 1%;
   margin-bottom: 3%;
+}
+nav a {
+  text-decoration: none;
 }
 footer {
   text-align: center;
@@ -239,6 +246,9 @@ header {
 #bottom-row {
   display: flex;
 }
+.aboutus-header img {
+  width: 60%;
+}
 .aboutus-header h1 {
   padding: 8%;
 }
@@ -279,6 +289,74 @@ header {
   padding: 2%;
 }
 #about .Nathan-1 p {
+  text-align: justify;
+  padding: 2%;
+}
+#about .Yannick {
+  text-align: center;
+  width: 50%;
+  float: right;
+  align-self: flex-start;
+  border-right: 2px dashed red;
+}
+#about .Yannick img {
+  padding: 5%;
+}
+#about .Yannick h2 {
+  padding: 2%;
+}
+#about .Yannick p {
+  text-align: justify;
+  padding: 2%;
+}
+#about .Afia {
+  text-align: center;
+  width: 50%;
+  float: right;
+  align-self: flex-end;
+  border-left: 2px dashed red;
+}
+#about .Afia img {
+  padding: 5%;
+}
+#about .Afia h2 {
+  padding: 2%;
+}
+#about .Afia p {
+  text-align: justify;
+  padding: 2%;
+}
+#about .Nathan-2 {
+  text-align: center;
+  width: 50%;
+  float: right;
+  align-self: flex-start;
+  border-right: 2px dashed red;
+}
+#about .Nathan-2 img {
+  padding: 5%;
+}
+#about .Nathan-2 h2 {
+  padding: 2%;
+}
+#about .Nathan-2 p {
+  text-align: justify;
+  padding: 2%;
+}
+#about .Will {
+  text-align: center;
+  width: 50%;
+  float: right;
+  align-self: flex-end;
+  border-left: 2px dashed red;
+}
+#about .Will img {
+  padding: 5%;
+}
+#about .Will h2 {
+  padding: 2%;
+}
+#about .Will p {
   text-align: justify;
   padding: 2%;
 }
