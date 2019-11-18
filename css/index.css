@@ -239,3 +239,46 @@ header {
 #bottom-row {
   display: flex;
 }
+.aboutus-header h1 {
+  padding: 8%;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+#about .Amber {
+  text-align: center;
+  width: 50%;
+  float: right;
+  align-self: flex-start;
+  border-right: 2px dashed red;
+}
+#about .Amber img {
+  padding: 5%;
+}
+#about .Amber h2 {
+  padding: 2%;
+}
+#about .Amber p {
+  text-align: justify;
+  padding: 2%;
+}
+#about .Nathan-1 {
+  text-align: center;
+  width: 50%;
+  float: right;
+  align-self: flex-end;
+  border-left: 2px dashed red;
+}
+#about .Nathan-1 img {
+  padding: 5%;
+}
+#about .Nathan-1 h2 {
+  padding: 2%;
+}
+#about .Nathan-1 p {
+  text-align: justify;
+  padding: 2%;
+}
