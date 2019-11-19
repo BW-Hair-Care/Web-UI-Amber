@@ -12,6 +12,7 @@
 
     h1{
         padding: 1%;
+        color: @bg-color;
 
         @media(max-width:500px){
             font-size: 3rem;
@@ -29,21 +30,13 @@
     }
 }
 
+
 #about{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     max-width: 80%;
     margin: auto;
     text-align: center;
-
-        @media(max-width: 500px){
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            max-width: 100%;
-        }
-
-
+    
     img{
         max-width: 90%;
         padding: 5%;
@@ -73,128 +66,100 @@
             font-size: 1.25rem;
             padding: 6%;
         }
-        
-    }
 
-    .Amber{
-        width:50%;
-        align-self: flex-start;
-        height: 10vh;
-        margin-bottom: 1%;
-
-        @media (max-width:500px){
-            height: unset;
-        }
-
-
-        h2{
-            background-color: @accent-color1-1;
-        }
-        p{
-            background-color: @accent-color1-1;
+        i{
+            font-size: 5rem;
         }
         
-
     }
+    
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "one one . ."
+        "one one two two"
+        "three three two two"
+        "three three four four"
+        "five five four four"
+        "five five six six"
+        ". . six six";
 
-    .Nathan-1{
-        width:50%;
-        align-self: flex-end;
-        height: 20vh;
-        margin-bottom: 1%;
+        .Amber{
+            grid-area: one;
 
-        @media (max-width:500px){
-            height: unset;
+            h2{
+                background-color: @accent-color1-1;
+            }
+            p{
+                background-color: @accent-color1-1;
+            }
+
         }
 
-        h2{
-            background-color: @accent-color2-2;
+        .Nathan-1{
+            grid-area: two;
+
+            h2{
+                background-color: @accent-color2-2;
+            }
+    
+            p {
+                background-color: @accent-color2-2;
+            }
         }
 
-        p {
-            background-color: @accent-color2-2;
+        .Yannick{
+            grid-area: three;
+
+            h2{
+                background-color: @accent-color3-3;
+            }
+    
+            p {
+                background-color: @accent-color3-3;
+            }
         }
 
-    }
+        .Afia{
+            grid-area: four;
 
-    .Yannick{
-        width:50%;
-        align-self: flex-start;
-        height: 10vh;
-        margin-bottom: 1%;
-
-        @media (max-width:500px){
-            height: unset;
+            h2{
+                background-color: @accent-color1-1;
+            }
+    
+            p {
+                background-color: @accent-color1-1;
+            }
         }
 
-        h2{
-            background-color: @accent-color3-3;
+        .Nathan-2{
+            grid-area: five;
+
+            h2{
+                background-color: @accent-color2-2;
+            }
+    
+            p {
+                background-color: @accent-color2-2;
+            }
         }
 
-        p {
-            background-color: @accent-color3-3;
-        }
+        .Will{
+            grid-area: six;
 
-    }
-
-    .Afia{
-        width:50%;
-        align-self: flex-end;
-        height: 20vh;
-        margin-bottom: 1%;
-
-        @media (max-width:500px){
-            height: unset;
-        }
-
-
-        h2{
-            background-color: @accent-color1-1;
-        }
-
-        p {
-            background-color: @accent-color1-1;
-        }
-
-    }.Nathan-2{
-        width:50%;
-        align-self: flex-start;
-        height: 10vh;
-        margin-bottom: 1%;
-
-        @media (max-width:500px){
-            height: unset;
-        }
-
-
-        h2{
-            background-color: @accent-color2-2;
-        }
-
-        p {
-            background-color: @accent-color2-2;
-        }
-
-    }
-
-    .Will{
-        width:50%;
-        align-self: flex-end;
-        height: 20vh;
-
-        @media (max-width:500px){
-            height: unset;
+            h2{
+                background-color: @accent-color3-3;
+            }
+    
+            p {
+                background-color: @accent-color3-3;
+            }
         }
 
 
-        h2{
-            background-color: @accent-color3-3;
-        }
 
-        p {
-            background-color: @accent-color3-3;
-        }
 
-    }
 }
+
+
 

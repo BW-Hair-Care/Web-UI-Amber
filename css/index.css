@@ -134,7 +134,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: #ecfffd;
+  background-color: #fef9ff;
 }
 html,
 body {
@@ -217,6 +217,13 @@ footer p {
   text-align: center;
   font-size: 1.5rem;
 }
+.footer {
+  margin: 20% auto 5%;
+}
+.footer p {
+  text-align: center;
+  font-size: 1.5rem;
+}
 .header-content {
   display: flex;
   flex-direction: column;
@@ -228,11 +235,11 @@ footer p {
   padding: 3%;
 }
 .header-content h1 {
-  color: #ecfffd;
+  color: #fef9ff;
 }
 .header-content h2 {
   padding: 2%;
-  color: #ecfffd;
+  color: #fef9ff;
 }
 .gallery {
   display: flex;
@@ -257,6 +264,7 @@ footer p {
 }
 #top-row h3 {
   padding-bottom: 10%;
+  color: #246573d0;
 }
 #top-row p {
   text-align: justify;
@@ -287,6 +295,7 @@ footer p {
 }
 #bottom-row h3 {
   padding-bottom: 10%;
+  color: #246573d0;
 }
 #bottom-row p {
   text-align: justify;
@@ -316,6 +325,7 @@ footer p {
 }
 .top h1 {
   padding: 1%;
+  color: #fef9ff;
 }
 @media (max-width: 500px) {
   .top h1 {
@@ -333,19 +343,13 @@ footer p {
   }
 }
 #about {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   max-width: 80%;
   margin: auto;
   text-align: center;
-}
-@media (max-width: 500px) {
-  #about {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "one one . ." "one one two two" "three three two two" "three three four four" "five five four four" "five five six six" ". . six six";
 }
 #about img {
   max-width: 90%;
@@ -378,16 +382,11 @@ footer p {
     padding: 6%;
   }
 }
-#about .Amber {
-  width: 50%;
-  align-self: flex-start;
-  height: 10vh;
-  margin-bottom: 1%;
+#about p i {
+  font-size: 5rem;
 }
-@media (max-width: 500px) {
-  #about .Amber {
-    height: unset;
-  }
+#about .Amber {
+  grid-area: one;
 }
 #about .Amber h2 {
   background-color: #24657377;
@@ -396,15 +395,7 @@ footer p {
   background-color: #24657377;
 }
 #about .Nathan-1 {
-  width: 50%;
-  align-self: flex-end;
-  height: 20vh;
-  margin-bottom: 1%;
-}
-@media (max-width: 500px) {
-  #about .Nathan-1 {
-    height: unset;
-  }
+  grid-area: two;
 }
 #about .Nathan-1 h2 {
   background-color: rgba(14, 89, 89, 0.514);
@@ -413,15 +404,7 @@ footer p {
   background-color: rgba(14, 89, 89, 0.514);
 }
 #about .Yannick {
-  width: 50%;
-  align-self: flex-start;
-  height: 10vh;
-  margin-bottom: 1%;
-}
-@media (max-width: 500px) {
-  #about .Yannick {
-    height: unset;
-  }
+  grid-area: three;
 }
 #about .Yannick h2 {
   background-color: #09404081;
@@ -430,15 +413,7 @@ footer p {
   background-color: #09404081;
 }
 #about .Afia {
-  width: 50%;
-  align-self: flex-end;
-  height: 20vh;
-  margin-bottom: 1%;
-}
-@media (max-width: 500px) {
-  #about .Afia {
-    height: unset;
-  }
+  grid-area: four;
 }
 #about .Afia h2 {
   background-color: #24657377;
@@ -447,15 +422,7 @@ footer p {
   background-color: #24657377;
 }
 #about .Nathan-2 {
-  width: 50%;
-  align-self: flex-start;
-  height: 10vh;
-  margin-bottom: 1%;
-}
-@media (max-width: 500px) {
-  #about .Nathan-2 {
-    height: unset;
-  }
+  grid-area: five;
 }
 #about .Nathan-2 h2 {
   background-color: rgba(14, 89, 89, 0.514);
@@ -464,14 +431,7 @@ footer p {
   background-color: rgba(14, 89, 89, 0.514);
 }
 #about .Will {
-  width: 50%;
-  align-self: flex-end;
-  height: 20vh;
-}
-@media (max-width: 500px) {
-  #about .Will {
-    height: unset;
-  }
+  grid-area: six;
 }
 #about .Will h2 {
   background-color: #09404081;
