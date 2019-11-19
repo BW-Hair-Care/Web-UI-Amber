@@ -10,11 +10,36 @@
 
     h1{
         color: @bg-color;
+        text-shadow: -8px 8px #094040da;
+        letter-spacing: 3px;
+        
+
+        @media(max-width:500px){
+            font-size: 2.5rem;
+            letter-spacing: 0;
+        }
     }
 
     h2{
         padding: 2%;
+        padding-bottom: 3%;
         color: @bg-color;
+
+        @media(max-width:500px){
+            font-size: 2rem;
+        }
+    }
+
+    .signup{
+        .custom-btn(@bg-color, 40%, @accent-color3);
+
+        @media(max-width:500px){
+            font-size: 2rem;
+            padding: 1%;
+            border-radius: 10px;
+            margin-bottom: 3%;
+        }
+
     }
 }
 
@@ -37,17 +62,30 @@
     align-items: center;
     width: 90%;
     padding-top: 3%;
-   
     margin: auto;
+
+    @media(max-width:500px){
+        display: flex;
+        flex-direction: column;
+    }
 
     img{
         max-width: 40%;
         padding-bottom: 10%;
+
+        @media(max-width:500px){
+            max-width: 20%;
+            padding-bottom: 5%;
+        }
     }
 
     h3{
         padding-bottom: 10%;
         color: @accent-color1;
+
+        @media(max-width:500px){
+            padding-bottom: 5%;
+        }
     }
 
     p{
@@ -57,6 +95,11 @@
     .section1{
        width: 25%;
        text-align: center;
+       
+
+       @media(max-width:500px){
+        width: 90%;
+    }
 
        
     }
@@ -64,11 +107,19 @@
     .section2{
         width: 25%;
         text-align: center;
+
+        @media(max-width:500px){
+            width: 90%;
+        }
     }
 
     .section3 {
         width: 25%;
         text-align: center;
+
+        @media(max-width:500px){
+            width: 90%;
+        }
     }
 
 }
@@ -79,17 +130,30 @@
     align-items: center;
     width: 90%;
     padding-top: 3%;
-   
     margin: auto;
+
+    @media(max-width:500px){
+        display: flex;
+        flex-direction: column;
+    }
 
     img{
         max-width: 40%;
         padding-bottom: 10%;
+
+        @media(max-width:500px){
+            max-width: 20%;
+            padding-bottom: 5%;
+        }
     }
 
     h3{
         padding-bottom: 10%;
         color: @accent-color1;
+
+        @media(max-width:500px){
+            padding-bottom: 5%;
+        }
     }
 
     p{
@@ -100,17 +164,29 @@
        width: 25%;
        text-align: center;
 
+       @media(max-width:500px){
+           width: 90%;
+       }
+
        
     }
 
     .section5{
         width: 25%;
         text-align: center;
+
+        @media(max-width:500px){
+            width: 90%;
+        }
     }
 
     .section6{
         width: 25%;
         text-align: center;
+
+        @media(max-width:500px){
+            width: 90%;
+        }
     }
 
 }

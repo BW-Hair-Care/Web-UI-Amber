@@ -141,7 +141,7 @@ body {
   font-family: 'Thasadith', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: 'Calistoga', cursive;
 }
 h2 {
@@ -196,7 +196,7 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
-    width: 50%;
+    width: 40%;
   }
 }
 header nav a {
@@ -229,10 +229,48 @@ footer p {
 }
 .header-content h1 {
   color: #fef9ff;
+  text-shadow: -8px 8px #094040da;
+  letter-spacing: 3px;
+}
+@media (max-width: 500px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0;
+  }
 }
 .header-content h2 {
   padding: 2%;
+  padding-bottom: 3%;
   color: #fef9ff;
+}
+@media (max-width: 500px) {
+  .header-content h2 {
+    font-size: 2rem;
+  }
+}
+.header-content .signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fef9ff;
+  cursor: pointer;
+  width: 40%;
+  font-family: 'Codystar', cursive;
+  font-size: 4rem;
+  font-style: bolder;
+  border-radius: 30px;
+  border: 4px solid #24657377;
+  box-shadow: -8px 10px;
+  color: #094040da;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .header-content .signup {
+    font-size: 2rem;
+    padding: 1%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+  }
 }
 .gallery {
   display: flex;
@@ -251,13 +289,30 @@ footer p {
   padding-top: 3%;
   margin: auto;
 }
+@media (max-width: 500px) {
+  #top-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #top-row img {
   max-width: 40%;
   padding-bottom: 10%;
 }
+@media (max-width: 500px) {
+  #top-row img {
+    max-width: 20%;
+    padding-bottom: 5%;
+  }
+}
 #top-row h3 {
   padding-bottom: 10%;
   color: #246573d0;
+}
+@media (max-width: 500px) {
+  #top-row h3 {
+    padding-bottom: 5%;
+  }
 }
 #top-row p {
   text-align: justify;
@@ -266,13 +321,28 @@ footer p {
   width: 25%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  #top-row .section1 {
+    width: 90%;
+  }
+}
 #top-row .section2 {
   width: 25%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  #top-row .section2 {
+    width: 90%;
+  }
+}
 #top-row .section3 {
   width: 25%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  #top-row .section3 {
+    width: 90%;
+  }
 }
 #bottom-row {
   display: flex;
@@ -282,13 +352,30 @@ footer p {
   padding-top: 3%;
   margin: auto;
 }
+@media (max-width: 500px) {
+  #bottom-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #bottom-row img {
   max-width: 40%;
   padding-bottom: 10%;
 }
+@media (max-width: 500px) {
+  #bottom-row img {
+    max-width: 20%;
+    padding-bottom: 5%;
+  }
+}
 #bottom-row h3 {
   padding-bottom: 10%;
   color: #246573d0;
+}
+@media (max-width: 500px) {
+  #bottom-row h3 {
+    padding-bottom: 5%;
+  }
 }
 #bottom-row p {
   text-align: justify;
@@ -297,16 +384,31 @@ footer p {
   width: 25%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  #bottom-row .section4 {
+    width: 90%;
+  }
+}
 #bottom-row .section5 {
   width: 25%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  #bottom-row .section5 {
+    width: 90%;
+  }
 }
 #bottom-row .section6 {
   width: 25%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  #bottom-row .section6 {
+    width: 90%;
+  }
+}
 .top {
-  margin: 3% auto;
+  margin: 3% auto 5%;
   text-align: center;
   padding-bottom: 1%;
   padding-top: 4%;
@@ -317,8 +419,10 @@ footer p {
   padding: 1%;
 }
 .top h1 {
-  padding: 1%;
+  padding: 2%;
   color: #fef9ff;
+  text-shadow: -8px 8px #094040da;
+  letter-spacing: 3px;
 }
 @media (max-width: 500px) {
   .top h1 {
@@ -329,6 +433,7 @@ footer p {
   font-size: 2rem;
   max-width: 70%;
   margin: auto;
+  padding-bottom: 5%;
 }
 @media (max-width: 500px) {
   .top p {
@@ -376,7 +481,8 @@ footer p {
   }
 }
 #about p i {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: #094040da;
 }
 #about .Amber {
   grid-area: one;
