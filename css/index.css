@@ -134,6 +134,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: #ecfffd;
 }
 html,
 body {
@@ -180,6 +181,11 @@ header {
   flex-wrap: wrap;
   margin: 4% auto 1% auto;
 }
+@media (max-width: 500px) {
+  header {
+    margin-top: 3%;
+  }
+}
 header img {
   width: 20%;
 }
@@ -188,11 +194,21 @@ header nav {
   justify-content: space-between;
   width: 30%;
 }
+@media (max-width: 500px) {
+  header nav {
+    width: 50%;
+  }
+}
 header nav a {
   text-decoration: none;
   font-size: 2rem;
   color: black;
   text-align: right;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.5rem;
+  }
 }
 footer {
   margin: 10% auto 5%;
@@ -204,23 +220,28 @@ footer p {
 .header-content {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  background-color: #246573d0;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
+  margin: 3% auto;
+  padding: 3%;
+}
+.header-content h1 {
+  color: #ecfffd;
 }
 .header-content h2 {
   padding: 2%;
+  color: #ecfffd;
 }
 .gallery {
   display: flex;
   margin: auto;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-bottom: 3%;
 }
 .gallery img {
-  max-width: 33%;
+  max-width: 32%;
 }
 #top-row {
   display: flex;
@@ -283,10 +304,11 @@ footer p {
   text-align: center;
 }
 .top {
-  width: 90%;
-  margin: auto;
+  margin: 3% auto;
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 1%;
+  padding-top: 4%;
+  background-color: #246573d0;
 }
 .top img {
   max-width: 50%;
@@ -295,10 +317,20 @@ footer p {
 .top h1 {
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .top h1 {
+    font-size: 3rem;
+  }
+}
 .top p {
   font-size: 2rem;
   max-width: 70%;
   margin: auto;
+}
+@media (max-width: 500px) {
+  .top p {
+    font-size: 1.5rem;
+  }
 }
 #about {
   display: flex;
@@ -307,11 +339,32 @@ footer p {
   margin: auto;
   text-align: center;
 }
+@media (max-width: 500px) {
+  #about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
 #about img {
+  max-width: 90%;
   padding: 5%;
 }
+@media (max-width: 500px) {
+  #about img {
+    max-width: 40%;
+  }
+}
 #about h2 {
+  width: 70%;
   padding: 2%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  #about h2 {
+    font-size: 2rem;
+  }
 }
 #about p {
   width: 70%;
@@ -319,74 +372,110 @@ footer p {
   padding: 2%;
   margin: auto;
 }
+@media (max-width: 500px) {
+  #about p {
+    font-size: 1.25rem;
+    padding: 6%;
+  }
+}
 #about .Amber {
   width: 50%;
   align-self: flex-start;
-  border-right: 3px dotted red;
-  height: 15vh;
+  height: 10vh;
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  #about .Amber {
+    height: unset;
+  }
+}
+#about .Amber h2 {
+  background-color: #24657377;
+}
+#about .Amber p {
+  background-color: #24657377;
 }
 #about .Nathan-1 {
   width: 50%;
   align-self: flex-end;
-  border-left: 3px dotted red;
-  height: 25vh;
+  height: 20vh;
   margin-bottom: 1%;
 }
-#about .Nathan-1 img {
-  padding: 5%;
+@media (max-width: 500px) {
+  #about .Nathan-1 {
+    height: unset;
+  }
 }
 #about .Nathan-1 h2 {
-  padding: 2%;
+  background-color: rgba(14, 89, 89, 0.514);
 }
 #about .Nathan-1 p {
-  text-align: justify;
-  padding: 2%;
+  background-color: rgba(14, 89, 89, 0.514);
 }
 #about .Yannick {
-  width: 50.1%;
+  width: 50%;
   align-self: flex-start;
-  border-right: 3px dotted red;
-  height: 15vh;
+  height: 10vh;
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  #about .Yannick {
+    height: unset;
+  }
+}
+#about .Yannick h2 {
+  background-color: #09404081;
+}
+#about .Yannick p {
+  background-color: #09404081;
 }
 #about .Afia {
-  width: 50.1%;
+  width: 50%;
   align-self: flex-end;
-  border-left: 3px dotted red;
-  height: 25vh;
+  height: 20vh;
   margin-bottom: 1%;
 }
-#about .Afia img {
-  padding: 5%;
+@media (max-width: 500px) {
+  #about .Afia {
+    height: unset;
+  }
 }
 #about .Afia h2 {
-  padding: 2%;
+  background-color: #24657377;
 }
 #about .Afia p {
-  text-align: justify;
-  padding: 2%;
+  background-color: #24657377;
 }
 #about .Nathan-2 {
-  width: 50.1%;
+  width: 50%;
   align-self: flex-start;
-  border-right: 3px dotted red;
-  height: 15vh;
+  height: 10vh;
   margin-bottom: 1%;
 }
-#about .Will {
-  width: 50.1%;
-  align-self: flex-end;
-  border-left: 3px dotted red;
-  height: 25vh;
+@media (max-width: 500px) {
+  #about .Nathan-2 {
+    height: unset;
+  }
 }
-#about .Will img {
-  padding: 5%;
+#about .Nathan-2 h2 {
+  background-color: rgba(14, 89, 89, 0.514);
+}
+#about .Nathan-2 p {
+  background-color: rgba(14, 89, 89, 0.514);
+}
+#about .Will {
+  width: 50%;
+  align-self: flex-end;
+  height: 20vh;
+}
+@media (max-width: 500px) {
+  #about .Will {
+    height: unset;
+  }
 }
 #about .Will h2 {
-  padding: 2%;
+  background-color: #09404081;
 }
 #about .Will p {
-  text-align: justify;
-  padding: 2%;
+  background-color: #09404081;
 }

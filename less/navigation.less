@@ -6,6 +6,10 @@ header{
     flex-wrap: wrap;
     margin: 4% auto 1% auto;
 
+    @media (max-width:500px){
+        margin-top: 3%;
+    }
+
     img{
         width: 20%;
         
@@ -15,6 +19,10 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 30%;
+
+        @media (max-width:500px){
+            width: 50%;
+        }
     
     
     a{
@@ -22,6 +30,10 @@ nav{
         font-size: 2rem;
         color: @navcolor;
         text-align: right;
+
+        @media (max-width:500px){
+            font-size: 1.5rem;
+        }
         
     }
 }

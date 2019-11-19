@@ -1,8 +1,9 @@
 .top{
-    width: 90%;
-    margin: auto;
+    margin: 3% auto;
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
+    padding-top: 4%;
+    background-color: @accent-color1;
 
     img{
         max-width: 50%;
@@ -11,12 +12,20 @@
 
     h1{
         padding: 1%;
+
+        @media(max-width:500px){
+            font-size: 3rem;
+        }
     }
 
     p{
         font-size: 2rem;
         max-width: 70%;
         margin: auto;
+
+        @media(max-width:500px){
+            font-size: 1.5rem;
+    }
     }
 }
 
@@ -27,12 +36,31 @@
     margin: auto;
     text-align: center;
 
+        @media(max-width: 500px){
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+
+
     img{
+        max-width: 90%;
         padding: 5%;
+
+        @media(max-width:500px){
+            max-width: 40%;
+        }
     }
 
     h2{
+        width: 70%;
         padding: 2%;
+        margin: auto;
+
+        @media(max-width:500px){
+            font-size: 2rem;
+        }
     }
 
     p {
@@ -40,95 +68,133 @@
         text-align: justify;
         padding: 2%;
         margin: auto;
+
+        @media(max-width:500px){
+            font-size: 1.25rem;
+            padding: 6%;
+        }
+        
     }
 
     .Amber{
         width:50%;
         align-self: flex-start;
-        border-right: 3px dotted red;
-        height: 15vh;
+        height: 10vh;
         margin-bottom: 1%;
+
+        @media (max-width:500px){
+            height: unset;
+        }
+
+
+        h2{
+            background-color: @accent-color1-1;
+        }
+        p{
+            background-color: @accent-color1-1;
+        }
+        
 
     }
 
     .Nathan-1{
         width:50%;
         align-self: flex-end;
-        border-left: 3px dotted red;
-        height: 25vh;
+        height: 20vh;
         margin-bottom: 1%;
 
-        img{
-            padding: 5%;
+        @media (max-width:500px){
+            height: unset;
         }
 
         h2{
-            padding: 2%;
+            background-color: @accent-color2-2;
         }
 
         p {
-            text-align: justify;
-            padding: 2%;
+            background-color: @accent-color2-2;
         }
 
     }
 
     .Yannick{
-        width:50.1%;
+        width:50%;
         align-self: flex-start;
-        border-right: 3px dotted black;
-        height: 15vh;
+        height: 10vh;
         margin-bottom: 1%;
+
+        @media (max-width:500px){
+            height: unset;
+        }
+
+        h2{
+            background-color: @accent-color3-3;
+        }
+
+        p {
+            background-color: @accent-color3-3;
+        }
 
     }
 
     .Afia{
-        width:50.1%;
+        width:50%;
         align-self: flex-end;
-        border-left: 3px dotted black;
-        height: 25vh;
+        height: 20vh;
         margin-bottom: 1%;
 
-        img{
-            padding: 5%;
+        @media (max-width:500px){
+            height: unset;
         }
 
+
         h2{
-            padding: 2%;
+            background-color: @accent-color1-1;
         }
 
         p {
-            text-align: justify;
-            padding: 2%;
+            background-color: @accent-color1-1;
         }
 
     }.Nathan-2{
-        width:50.1%;
+        width:50%;
         align-self: flex-start;
-        border-right: 3px dotted red;
-        height: 15vh;
+        height: 10vh;
         margin-bottom: 1%;
+
+        @media (max-width:500px){
+            height: unset;
+        }
+
+
+        h2{
+            background-color: @accent-color2-2;
+        }
+
+        p {
+            background-color: @accent-color2-2;
+        }
 
     }
 
     .Will{
-        width:50.1%;
+        width:50%;
         align-self: flex-end;
-        border-left: 3px dotted red;
-        height: 25vh;
+        height: 20vh;
 
-        img{
-            padding: 5%;
+        @media (max-width:500px){
+            height: unset;
         }
 
+
         h2{
-            padding: 2%;
+            background-color: @accent-color3-3;
         }
 
         p {
-            text-align: justify;
-            padding: 2%;
+            background-color: @accent-color3-3;
         }
 
     }
 }
+
