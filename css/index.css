@@ -217,13 +217,6 @@ footer p {
   text-align: center;
   font-size: 1.5rem;
 }
-.footer {
-  margin: 20% auto 5%;
-}
-.footer p {
-  text-align: center;
-  font-size: 1.5rem;
-}
 .header-content {
   display: flex;
   flex-direction: column;
@@ -362,7 +355,7 @@ footer p {
 }
 #about h2 {
   width: 70%;
-  padding: 2%;
+  padding-top: 5%;
   margin: auto;
 }
 @media (max-width: 500px) {
@@ -373,7 +366,7 @@ footer p {
 #about p {
   width: 70%;
   text-align: justify;
-  padding: 2%;
+  padding: 0 8% 5% 8%;
   margin: auto;
 }
 @media (max-width: 500px) {
@@ -383,10 +376,11 @@ footer p {
   }
 }
 #about p i {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 #about .Amber {
   grid-area: one;
+  margin-bottom: 10%;
 }
 #about .Amber h2 {
   background-color: #24657377;
@@ -405,6 +399,7 @@ footer p {
 }
 #about .Yannick {
   grid-area: three;
+  margin-bottom: 10%;
 }
 #about .Yannick h2 {
   background-color: #09404081;
@@ -423,6 +418,7 @@ footer p {
 }
 #about .Nathan-2 {
   grid-area: five;
+  margin-bottom: 10%;
 }
 #about .Nathan-2 h2 {
   background-color: rgba(14, 89, 89, 0.514);
