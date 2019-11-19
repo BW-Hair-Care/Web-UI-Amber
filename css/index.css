@@ -264,6 +264,10 @@ footer p {
   color: #094040da;
   padding: 2%;
 }
+.header-content .signup:hover {
+  background-color: #fff;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 0 75px rgba(255, 255, 255, 0.05), 0 0 0 60px rgba(255, 255, 255, 0.05), 0 0 0 45px rgba(255, 255, 255, 0.05), 0 0 0 30px rgba(255, 255, 255, 0.05), 0 0 0 15px rgba(255, 255, 255, 0.05);
+}
 @media (max-width: 500px) {
   .header-content .signup {
     font-size: 2rem;
@@ -408,35 +412,46 @@ footer p {
   }
 }
 .top {
-  margin: 3% auto 5%;
+  margin: 3% auto;
   text-align: center;
-  padding-bottom: 1%;
-  padding-top: 4%;
-  background-color: #246573d0;
+  padding-bottom: 65%;
+  background-image: url("../img/hair.jpg");
+  background-size: cover;
+  filter: grayscale(70%);
 }
 .top img {
   max-width: 50%;
   padding: 1%;
 }
-.top h1 {
+.middle {
+  margin: 3% auto 5%;
+  text-align: center;
+}
+.middle h1 {
   padding: 2%;
-  color: #fef9ff;
-  text-shadow: -8px 8px #094040da;
+  color: #24657377;
+  font-size: 6rem;
   letter-spacing: 3px;
+  font-family: 'Codystar', cursive;
 }
 @media (max-width: 500px) {
-  .top h1 {
+  .middle h1 {
     font-size: 3rem;
+    text-shadow: none;
   }
 }
-.top p {
+.middle p {
   font-size: 2rem;
+  font-weight: bold;
   max-width: 70%;
-  margin: auto;
-  padding-bottom: 5%;
+  margin: 2% auto 0;
+  padding: 2%;
+  background-color: #09404081;
+  box-shadow: -20px 20px #24657377, -10px 10px rgba(14, 89, 89, 0.514);
+  border-radius: 15px;
 }
 @media (max-width: 500px) {
-  .top p {
+  .middle p {
     font-size: 1.5rem;
   }
 }
@@ -483,6 +498,11 @@ footer p {
 #about p i {
   font-size: 4rem;
   color: #094040da;
+}
+@media (max-width: 500px) {
+  #about p i {
+    font-size: 2rem;
+  }
 }
 #about .Amber {
   grid-area: one;
