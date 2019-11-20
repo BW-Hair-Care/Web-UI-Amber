@@ -6,10 +6,25 @@ header{
     flex-wrap: nowrap;
     margin: 4% auto 1% auto;
 
-
     @media @phone{
         margin-top: 5%;
-    }
+    }//ends @media
+
+    nav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 50%;
+
+        a{
+            color: @text-color;
+        }
+
+            @media @phone{
+                width: 70%;
+                font-size: 1rem;
+            }//ends @media    
+    }//ends nav
 
     span{
         background-color: @accent-color1;
@@ -21,32 +36,12 @@ header{
         a{
             font-weight: bold;
             letter-spacing: 1;
-            
-        }
-    }
+            color: rgb(189, 162, 128);
+        }//ends a
+    }//ends span
 
     img{
-        width: 20%;
-        
-    }
-
-nav{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 50%;
-
-        @media @phone{
-            width: 70%;
-            font-size: 1rem;
-        }
-    
-    
-    
-    
-
-    
-}
-
-}
+        max-width: 20%;
+    }//ends img
+}//ends header
 

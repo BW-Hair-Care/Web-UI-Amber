@@ -134,7 +134,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: #fef9ff;
+  background-color: #fefbff;
 }
 html,
 body {
@@ -197,6 +197,21 @@ header {
     margin-top: 5%;
   }
 }
+header nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 50%;
+}
+header nav a {
+  color: rgba(0, 0, 0, 0.678);
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 70%;
+    font-size: 1rem;
+  }
+}
 header span {
   background-color: mistyrose;
   padding: 2%;
@@ -207,21 +222,10 @@ header span {
 header span a {
   font-weight: bold;
   letter-spacing: 1;
+  color: #bda280;
 }
 header img {
-  width: 20%;
-}
-header nav {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 50%;
-}
-@media (max-width: 500px) {
-  header nav {
-    width: 70%;
-    font-size: 1rem;
-  }
+  max-width: 20%;
 }
 footer {
   margin: 10% auto 5%;
@@ -244,8 +248,8 @@ footer p a {
   padding: 3%;
 }
 .header-content h1 {
-  color: #fef9ff;
-  text-shadow: -8px 8px #094040da;
+  color: rgba(0, 0, 0, 0.678);
+  text-shadow: -8px 8px tan;
   letter-spacing: 3px;
 }
 @media (max-width: 500px) {
@@ -255,9 +259,11 @@ footer p a {
   }
 }
 .header-content h2 {
-  padding: 2%;
-  padding-bottom: 3%;
-  color: #fef9ff;
+  color: rgba(0, 0, 0, 0.678);
+  margin-top: 3%;
+  border-top: 8px solid tan;
+  border-style: double;
+  line-height: 2;
 }
 @media (max-width: 500px) {
   .header-content h2 {
@@ -268,21 +274,21 @@ footer p a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fef9ff;
-  cursor: pointer;
+  background-color: #fefbff;
+  cursor: crosshair;
   width: 40%;
   font-family: 'Codystar', cursive;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-style: bolder;
   border-radius: 30px;
-  border: 4px solid rgba(255, 228, 225, 0.575);
-  box-shadow: -8px 10px;
-  color: tan;
+  border: 4px solid tan;
+  box-shadow: -10px 10px rgba(0, 0, 0, 0.678);
+  color: rgba(0, 0, 0, 0.678);
   padding: 2%;
 }
 .header-content .signup:hover {
   background-color: #fff;
-  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 0 75px rgba(255, 255, 255, 0.05), 0 0 0 60px rgba(255, 255, 255, 0.05), 0 0 0 45px rgba(255, 255, 255, 0.05), 0 0 0 30px rgba(255, 255, 255, 0.05), 0 0 0 15px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(210, 180, 140, 0.75), 0 0 20px rgba(210, 180, 140, 0.75), 0 0 30px rgba(210, 180, 140, 0.75), 0 0 0 75px rgba(210, 180, 140, 0.15), 0 0 0 60px rgba(210, 180, 140, 0.15), 0 0 0 45px rgba(210, 180, 140, 0.15), 0 0 0 30px rgba(210, 180, 140, 0.15), 0 0 0 15px rgba(210, 180, 140, 0.15);
 }
 @media (max-width: 500px) {
   .header-content .signup {
@@ -328,7 +334,7 @@ footer p a {
 }
 #top-row h3 {
   padding-bottom: 10%;
-  color: mistyrose;
+  color: tan;
 }
 @media (max-width: 500px) {
   #top-row h3 {
@@ -392,7 +398,7 @@ footer p a {
 }
 #bottom-row h3 {
   padding-bottom: 10%;
-  color: mistyrose;
+  color: tan;
 }
 @media (max-width: 500px) {
   #bottom-row h3 {
@@ -484,7 +490,7 @@ footer p a {
 }
 #about img {
   max-width: 60%;
-  filter: grayscale(60%);
+  filter: grayscale(70%);
   border-radius: 30%;
 }
 #about h2 {

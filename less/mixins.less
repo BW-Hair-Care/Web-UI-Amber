@@ -4,16 +4,27 @@
     align-items: center;
     justify-content: center;
     background-color: @bg-color;
-    cursor: pointer;
+    cursor: crosshair;
     width: @size;
     font-family: 'Codystar', cursive;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-style: bolder;
     border-radius: 30px;
-    border: 4px solid @accent-color1-1;
-    box-shadow: -8px 10px;
+    border: 4px solid @accent-color3;
+    box-shadow: -10px 10px @text-color;
     color: @font-color;
     padding: 2%;
+}
+
+.generalSetting(@direction, @color, @justify, @margin, @padding){
+    display: flex;
+    flex-direction: @direction;
+    background-color: @color;
+    justify-content: @justify;
+    align-items: center;
+    text-align: center;
+    margin: @margin;
+    padding: @padding
 }
 
 .aboutus-img-l(@accent-color1, @accent-color3-3){

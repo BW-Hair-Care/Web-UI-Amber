@@ -1,52 +1,46 @@
 .header-content{
-    display: flex;
-    flex-direction: column;
-    background-color: @accent-color1;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 3% auto;
-    padding: 3%;
+    .generalSetting(column, @accent-color1, center, 3% auto, 3%);
 
     h1{
-        color: @bg-color;
-        text-shadow: -8px 8px #094040da;
+        color: @text-color;
+        text-shadow: -8px 8px @accent-color3;
         letter-spacing: 3px;
-        
 
-        @media(max-width:500px){
+        @media @phone{
             font-size: 2.5rem;
             letter-spacing: 0;
-        }
-    }
+        }//ends @media
+    }//ends h1
 
     h2{
-        padding: 2%;
-        padding-bottom: 3%;
-        color: @bg-color;
+        color: @text-color;
+        margin-top: 3%;
+        border-top: 8px solid @accent-color3;
+        border-style: double;
+        line-height: 2;
 
-        @media(max-width:500px){
+        @media @phone{
             font-size: 2rem;
         }
     }
 
     .signup{
-        .custom-btn(@bg-color, 40%, @accent-color3);
+        .custom-btn(@bg-color, 40%, @text-color);
 
         &:hover {
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(255,255,255,1),
-                        0 0 20px rgba(255,255,255,1),
-                        0 0 30px rgba(255,255,255,1),
-                        0 0 0 75px rgba(255,255,255,0.05),
-                        0 0 0 60px rgba(255,255,255,0.05),
-                        0 0 0 45px rgba(255,255,255,0.05),
-                        0 0 0 30px rgba(255,255,255,0.05),
-                        0 0 0 15px rgba(255,255,255,0.05);
+            box-shadow: 0 0 10px rgba(210, 180, 140, 0.75),
+                        0 0 20px rgba(210, 180, 140, 0.75),
+                        0 0 30px rgba(210, 180, 140, 0.75),
+                        0 0 0 75px rgba(210, 180, 140, 0.15),
+                        0 0 0 60px rgba(210, 180, 140, 0.15),
+                        0 0 0 45px rgba(210, 180, 140, 0.15),
+                        0 0 0 30px rgba(210, 180, 140, 0.15),
+                        0 0 0 15px rgba(210, 180, 140, 0.15);
         
         } 
 
-        @media(max-width:500px){
+        @media @phone{
             font-size: 2rem;
             padding: 1%;
             border-radius: 10px;
@@ -79,7 +73,7 @@
     padding-top: 3%;
     margin: auto;
 
-    @media(max-width:500px){
+    @media @phone{
         display: flex;
         flex-direction: column;
     }
@@ -90,7 +84,7 @@
         padding-top: 5%;
         
 
-        @media(max-width:500px){
+        @media @phone{
             max-width: 20%;
             padding-bottom: 5%;
         }
@@ -98,9 +92,9 @@
 
     h3{
         padding-bottom: 10%;
-        color: @accent-color1;
+        color: @accent-color3;
 
-        @media(max-width:500px){
+        @media @phone{
             padding-bottom: 5%;
         }
     }
@@ -114,7 +108,7 @@
        text-align: center;
        
 
-       @media(max-width:500px){
+       @media @phone{
         width: 90%;
     }
 
@@ -125,7 +119,7 @@
         width: 25%;
         text-align: center;
 
-        @media(max-width:500px){
+        @media @phone{
             width: 90%;
         }
     }
@@ -134,7 +128,7 @@
         width: 25%;
         text-align: center;
 
-        @media(max-width:500px){
+        @media @phone{
             width: 90%;
         }
     }
@@ -149,7 +143,7 @@
     padding-top: 3%;
     margin: auto;
 
-    @media(max-width:500px){
+    @media @phone{
         display: flex;
         flex-direction: column;
     }
@@ -159,7 +153,7 @@
         padding-bottom: 10%;
         padding-top: 5%;
 
-        @media(max-width:500px){
+        @media @phone{
             max-width: 20%;
             padding-bottom: 5%;
         }
@@ -167,9 +161,9 @@
 
     h3{
         padding-bottom: 10%;
-        color: @accent-color1;
+        color: @accent-color3;
 
-        @media(max-width:500px){
+        @media @phone{
             padding-bottom: 5%;
         }
     }
@@ -182,7 +176,7 @@
        width: 25%;
        text-align: center;
 
-       @media(max-width:500px){
+       @media @phone{
            width: 90%;
        }
 
@@ -193,7 +187,7 @@
         width: 25%;
         text-align: center;
 
-        @media(max-width:500px){
+        @media @phone{
             width: 90%;
         }
     }
@@ -202,7 +196,7 @@
         width: 25%;
         text-align: center;
 
-        @media(max-width:500px){
+        @media @phone{
             width: 90%;
         }
     }
