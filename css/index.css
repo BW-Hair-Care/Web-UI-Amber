@@ -156,7 +156,7 @@ h3 {
 h4 {
   font-size: 2rem;
   padding-bottom: 10px;
-  font-family: 'arial', sans-serif;
+  font-family: 'Cormorant Infant', serif;
 }
 p {
   line-height: 1.5;
@@ -177,7 +177,7 @@ a {
   text-decoration: none;
   font-size: 2rem;
   text-align: right;
-  color: black;
+  color: rgba(0, 0, 0, 0.678);
 }
 @media (max-width: 500px) {
   a {
@@ -219,10 +219,16 @@ header span {
   align-self: center;
   box-shadow: -5px 5px rgba(210, 180, 140, 0.616);
 }
+header span:hover {
+  background-color: #bda280;
+}
 header span a {
   font-weight: bold;
   letter-spacing: 1;
   color: #bda280;
+}
+header span a:hover {
+  color: mistyrose;
 }
 header img {
   max-width: 20%;
@@ -249,7 +255,7 @@ footer p a {
 }
 .header-content h1 {
   color: rgba(0, 0, 0, 0.678);
-  text-shadow: -8px 8px tan;
+  text-shadow: -3px 3px rgba(210, 180, 140, 0.616);
   letter-spacing: 3px;
 }
 @media (max-width: 500px) {
@@ -267,24 +273,33 @@ footer p a {
 }
 @media (max-width: 500px) {
   .header-content h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    border-top: 5px solid tan;
+    border-style: double;
+    line-height: 2;
   }
 }
 .header-content .signup {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: #fefbff;
   cursor: crosshair;
   width: 40%;
   font-family: 'Codystar', cursive;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-style: bolder;
   border-radius: 30px;
-  border: 4px solid tan;
+  border: 4.5px solid tan;
   box-shadow: -10px 10px rgba(0, 0, 0, 0.678);
   color: rgba(0, 0, 0, 0.678);
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .header-content .signup {
+    border: 2px solid tan;
+  }
 }
 .header-content .signup:hover {
   background-color: #fff;
@@ -307,13 +322,23 @@ footer p a {
 .gallery img {
   max-width: 32%;
 }
+@media (max-width: 499px) {
+  .gallery img {
+    height: 200px;
+    max-width: 32%;
+  }
+}
 #top-row {
   display: flex;
+  flex-direction: row;
+  background-color: none;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 0;
   width: 90%;
   padding-top: 3%;
-  margin: auto;
 }
 @media (max-width: 500px) {
   #top-row {
@@ -373,11 +398,15 @@ footer p a {
 }
 #bottom-row {
   display: flex;
+  flex-direction: row;
+  background-color: none;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 0;
   width: 90%;
   padding-top: 3%;
-  margin: auto;
 }
 @media (max-width: 500px) {
   #bottom-row {
@@ -504,10 +533,15 @@ footer p a {
     font-size: 2rem;
   }
 }
+#about h4 {
+  width: 70%;
+  margin: auto;
+  border-radius: 1px;
+}
 #about p {
   width: 70%;
-  text-align: justify;
-  padding: 0 8% 5% 8%;
+  text-align: center;
+  padding: 0 8% 4% 8%;
   margin: auto;
   border-radius: 1px;
 }
@@ -533,19 +567,18 @@ footer p a {
   box-shadow: -8px 8px rgba(210, 180, 140, 0.616), -15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
-#about .Amber h2 {
-  background-color: mistyrose;
-  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
-}
+#about .Amber h2,
+#about .Amber h4,
 #about .Amber p {
   background-color: mistyrose;
   box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
 }
-#about .Amber p i {
+#about .Amber i {
   color: tan;
 }
 #about .Nathan-1 {
   grid-area: two;
+  margin-bottom: 10%;
 }
 #about .Nathan-1 img {
   box-shadow: 8px 8px rgba(210, 180, 140, 0.616), 15px 15px blanchedalmond;
@@ -556,15 +589,13 @@ footer p a {
     box-shadow: 5px 5px mistyrose;
   }
 }
-#about .Nathan-1 h2 {
-  background-color: blanchedalmond;
-  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
-}
+#about .Nathan-1 h2,
+#about .Nathan-1 h4,
 #about .Nathan-1 p {
   background-color: blanchedalmond;
   box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
 }
-#about .Nathan-1 p i {
+#about .Nathan-1 i {
   color: rgba(210, 180, 140, 0.616);
 }
 #about .Yannick {
@@ -580,19 +611,18 @@ footer p a {
     box-shadow: -5px 5px rgba(255, 235, 205, 0.651);
   }
 }
-#about .Yannick h2 {
-  background-color: tan;
-  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
-}
+#about .Yannick h2,
+#about .Yannick h4,
 #about .Yannick p {
   background-color: tan;
   box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
 }
-#about .Yannick p i {
+#about .Yannick i {
   color: blanchedalmond;
 }
 #about .Afia {
   grid-area: four;
+  margin-bottom: 10%;
 }
 #about .Afia img {
   box-shadow: 8px 8px rgba(210, 180, 140, 0.616), 15px 15px blanchedalmond;
@@ -603,15 +633,13 @@ footer p a {
     box-shadow: 5px 5px blanchedalmond;
   }
 }
-#about .Afia h2 {
-  background-color: mistyrose;
-  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
-}
+#about .Afia h2,
+#about .Afia h4,
 #about .Afia p {
   background-color: mistyrose;
   box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
 }
-#about .Afia p i {
+#about .Afia i {
   color: tan;
 }
 #about .Jasmine {
@@ -627,15 +655,13 @@ footer p a {
     box-shadow: -5px 5px rgba(210, 180, 140, 0.616);
   }
 }
-#about .Jasmine h2 {
-  background-color: blanchedalmond;
-  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
-}
+#about .Jasmine h2,
+#about .Jasmine h4,
 #about .Jasmine p {
   background-color: blanchedalmond;
   box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
 }
-#about .Jasmine p i {
+#about .Jasmine i {
   color: rgba(210, 180, 140, 0.616);
 }
 #about .Nathan-2 {
@@ -650,15 +676,13 @@ footer p a {
     box-shadow: 5px 5px tan;
   }
 }
-#about .Nathan-2 h2 {
-  background-color: tan;
-  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
-}
+#about .Nathan-2 h2,
+#about .Nathan-2 h4,
 #about .Nathan-2 p {
   background-color: tan;
   box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
 }
-#about .Nathan-2 p i {
+#about .Nathan-2 i {
   color: blanchedalmond;
 }
 #about .Will {
@@ -673,14 +697,12 @@ footer p a {
     box-shadow: -5px 5px rgba(255, 228, 225, 0.575);
   }
 }
-#about .Will h2 {
-  background-color: mistyrose;
-  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
-}
+#about .Will h2,
+#about .Will h4,
 #about .Will p {
   background-color: mistyrose;
   box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
 }
-#about .Will p i {
+#about .Will i {
   color: tan;
 }
