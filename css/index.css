@@ -194,19 +194,18 @@ header {
 }
 @media (max-width: 500px) {
   header {
-    margin-top: 3%;
+    margin-top: 5%;
   }
 }
 header span {
-  background-color: #246573d0;
+  background-color: mistyrose;
   padding: 2%;
   border-radius: 8px;
   align-self: center;
+  box-shadow: -5px 5px rgba(210, 180, 140, 0.616);
 }
 header span a {
   font-weight: bold;
-  color: white;
-  font-size: 1.5rem;
   letter-spacing: 1;
 }
 header img {
@@ -237,7 +236,7 @@ footer p a {
 .header-content {
   display: flex;
   flex-direction: column;
-  background-color: #246573d0;
+  background-color: mistyrose;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -276,9 +275,9 @@ footer p a {
   font-size: 4rem;
   font-style: bolder;
   border-radius: 30px;
-  border: 4px solid #24657377;
+  border: 4px solid rgba(255, 228, 225, 0.575);
   box-shadow: -8px 10px;
-  color: #094040da;
+  color: tan;
   padding: 2%;
 }
 .header-content .signup:hover {
@@ -329,7 +328,7 @@ footer p a {
 }
 #top-row h3 {
   padding-bottom: 10%;
-  color: #246573d0;
+  color: mistyrose;
 }
 @media (max-width: 500px) {
   #top-row h3 {
@@ -393,7 +392,7 @@ footer p a {
 }
 #bottom-row h3 {
   padding-bottom: 10%;
-  color: #246573d0;
+  color: mistyrose;
 }
 @media (max-width: 500px) {
   #bottom-row h3 {
@@ -448,7 +447,7 @@ footer p a {
 }
 .middle h1 {
   padding: 2%;
-  color: #24657377;
+  color: tan;
   font-size: 6rem;
   letter-spacing: 3px;
   font-family: 'Codystar', cursive;
@@ -465,8 +464,8 @@ footer p a {
   max-width: 70%;
   margin: 2% auto 9%;
   padding: 2%;
-  background-color: #09404081;
-  box-shadow: -20px 20px #24657377, -10px 10px rgba(14, 89, 89, 0.514);
+  background-color: mistyrose;
+  box-shadow: -20px 20px rgba(255, 235, 205, 0.651), -10px 10px rgba(210, 180, 140, 0.616);
   border-radius: 15px;
 }
 @media (max-width: 500px) {
@@ -487,11 +486,6 @@ footer p a {
   max-width: 60%;
   filter: grayscale(60%);
   border-radius: 30%;
-}
-@media (max-width: 500px) {
-  #about img {
-    max-width: 30%;
-  }
 }
 #about h2 {
   width: 70%;
@@ -519,7 +513,6 @@ footer p a {
 }
 #about p i {
   font-size: 4rem;
-  color: #094040da;
 }
 @media (max-width: 500px) {
   #about p i {
@@ -531,127 +524,157 @@ footer p a {
   margin-bottom: 10%;
 }
 #about .Amber img {
-  box-shadow: -15px 15px #24657377, -8px 8px #246573d0;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616), -15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
-@media (max-width: 500px) {
-  #about .Amber img {
-    box-shadow: -5px 5px #24657377;
-  }
-}
 #about .Amber h2 {
-  background-color: #24657377;
+  background-color: mistyrose;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
 }
 #about .Amber p {
-  background-color: #24657377;
+  background-color: mistyrose;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
+}
+#about .Amber p i {
+  color: tan;
 }
 #about .Nathan-1 {
   grid-area: two;
 }
 #about .Nathan-1 img {
-  box-shadow: 15px 15px #24657377, 8px 8px #246573d0;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616), 15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
 @media (max-width: 500px) {
   #about .Nathan-1 img {
-    box-shadow: 5px 5px #246573d0;
+    box-shadow: 5px 5px mistyrose;
   }
 }
 #about .Nathan-1 h2 {
-  background-color: rgba(14, 89, 89, 0.514);
+  background-color: blanchedalmond;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
 }
 #about .Nathan-1 p {
-  background-color: rgba(14, 89, 89, 0.514);
+  background-color: blanchedalmond;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
+}
+#about .Nathan-1 p i {
+  color: rgba(210, 180, 140, 0.616);
 }
 #about .Yannick {
   grid-area: three;
   margin-bottom: 10%;
 }
 #about .Yannick img {
-  box-shadow: -15px 15px #24657377, -8px 8px #246573d0;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616), -15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
 @media (max-width: 500px) {
   #about .Yannick img {
-    box-shadow: -5px 5px rgba(14, 89, 89, 0.514);
+    box-shadow: -5px 5px rgba(255, 235, 205, 0.651);
   }
 }
 #about .Yannick h2 {
-  background-color: #09404081;
+  background-color: tan;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
 }
 #about .Yannick p {
-  background-color: #09404081;
+  background-color: tan;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
+}
+#about .Yannick p i {
+  color: blanchedalmond;
 }
 #about .Afia {
   grid-area: four;
 }
 #about .Afia img {
-  box-shadow: 15px 15px #24657377, 8px 8px #246573d0;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616), 15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
 @media (max-width: 500px) {
   #about .Afia img {
-    box-shadow: 5px 5px rgba(14, 89, 89, 0.788);
+    box-shadow: 5px 5px blanchedalmond;
   }
 }
 #about .Afia h2 {
-  background-color: #24657377;
+  background-color: mistyrose;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
 }
 #about .Afia p {
-  background-color: #24657377;
+  background-color: mistyrose;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
+}
+#about .Afia p i {
+  color: tan;
 }
 #about .Jasmine {
   grid-area: five;
   margin-bottom: 10%;
 }
 #about .Jasmine img {
-  box-shadow: -15px 15px #24657377, -8px 8px #246573d0;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616), -15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
 @media (max-width: 500px) {
   #about .Jasmine img {
-    box-shadow: -5px 5px #09404081;
+    box-shadow: -5px 5px rgba(210, 180, 140, 0.616);
   }
 }
 #about .Jasmine h2 {
-  background-color: #24657377;
+  background-color: blanchedalmond;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
 }
 #about .Jasmine p {
-  background-color: #24657377;
+  background-color: blanchedalmond;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
+}
+#about .Jasmine p i {
+  color: rgba(210, 180, 140, 0.616);
 }
 #about .Nathan-2 {
   grid-area: six;
 }
 #about .Nathan-2 img {
-  box-shadow: 15px 15px #24657377, 8px 8px #246573d0;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616), 15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
 @media (max-width: 500px) {
   #about .Nathan-2 img {
-    box-shadow: 5px 5px #094040da;
+    box-shadow: 5px 5px tan;
   }
 }
 #about .Nathan-2 h2 {
-  background-color: rgba(14, 89, 89, 0.514);
+  background-color: tan;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
 }
 #about .Nathan-2 p {
-  background-color: rgba(14, 89, 89, 0.514);
+  background-color: tan;
+  box-shadow: 8px 8px rgba(210, 180, 140, 0.616);
+}
+#about .Nathan-2 p i {
+  color: blanchedalmond;
 }
 #about .Will {
   grid-area: seven;
 }
 #about .Will img {
-  box-shadow: -15px 15px #24657377, -8px 8px #246573d0;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616), -15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
 @media (max-width: 500px) {
   #about .Will img {
-    box-shadow: -5px 5px #24657377;
+    box-shadow: -5px 5px rgba(255, 228, 225, 0.575);
   }
 }
 #about .Will h2 {
-  background-color: #09404081;
+  background-color: mistyrose;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
 }
 #about .Will p {
-  background-color: #09404081;
+  background-color: mistyrose;
+  box-shadow: -8px 8px rgba(210, 180, 140, 0.616);
+}
+#about .Will p i {
+  color: tan;
 }

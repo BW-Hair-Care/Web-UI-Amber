@@ -9,9 +9,8 @@
     img{
         max-width: 50%;
         padding: 1%;
-    }
-    
-}
+    }//ends img
+}//ends .top
 
 .middle{
     margin: 3% auto 5%;
@@ -19,16 +18,16 @@
 
     h1{
         padding: 2%;
-        color: @accent-color1-1;
+        color: @accent-color3;
         font-size: 6rem;
         letter-spacing: 3px;
         font-family: 'Codystar', cursive;
 
-        @media(max-width:500px){
+        @media @phone{
             font-size: 3rem;
             text-shadow: none;
-        }
-    }
+        }//ends @media
+    }//ends h1
 
     p{
         font-size: 2rem;
@@ -36,16 +35,16 @@
         max-width: 70%;
         margin: 2% auto 9%;
         padding: 2%;
-        background-color: @accent-color3-3;
-        box-shadow: -20px 20px @accent-color1-1,
-                    -10px 10px @accent-color2-2;
+        background-color: @accent-color1;
+        box-shadow: -20px 20px @accent-color2-2,
+                    -10px 10px @accent-color3-3;
         border-radius: 15px;
 
-        @media(max-width:500px){
+        @media @phone{
             font-size: 1.5rem;
-    }
-    }
-}
+        }//ends @media
+    }//ends p
+}//ends .middle
 
 #about{
     display: grid;
@@ -57,12 +56,7 @@
         max-width: 60%;
         filter: grayscale(60%);
         border-radius: 30%;
-        
-
-        @media(max-width:500px){
-            max-width: 30%;
-        }
-    }
+    }//ends img
 
     h2{
         width: 70%;
@@ -70,10 +64,10 @@
         margin: auto;
         border-radius: 1px;
 
-        @media(max-width:500px){
+        @media @phone{
             font-size: 2rem;
-        }
-    }
+        }//ends @media
+    }//ends h2
 
     p {
         width: 70%;
@@ -82,23 +76,19 @@
         margin: auto;
         border-radius: 1px;
 
-        
-
-        @media(max-width:500px){
+        @media @phone{
             font-size: 1.25rem;
             padding: 6%;
-        }
+        }//ends @media
 
         i{
             font-size: 4rem;
-            color: @accent-color3;
 
-            @media(max-width:500px){
+            @media @phone{
                 font-size: 2rem;
-            }
-        }
-        
-    }
+            }//ends @media
+        }//ends i      
+    }//ends p
     
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
@@ -115,166 +105,188 @@
         .Amber{
             grid-area: one;
             margin-bottom: 10%;
-            
 
             img{
-                box-shadow: -15px 15px @accent-color1-1,
-                            -8px 8px @accent-color1;
-                margin-bottom: 10%;
-
-                @media(max-width:500px){
-                    box-shadow: -5px 5px @accent-color1-1;
-                }
-            }
-            
-
+                .aboutus-img-l(@accent-color1, @accent-color3-3);
+            }//ends img
+        
             h2{
-                background-color: @accent-color1-1;
-            }
-            p{
-                background-color: @accent-color1-1;
-            }
+                background-color: @accent-color1;
+                box-shadow:  @shadow-l; 
+            }//ends h2
 
-        }
+            p{
+                background-color: @accent-color1;
+                box-shadow:  @shadow-l;
+                
+                i{
+                    color: @accent-color3;
+                }//ends i
+            }//ends p
+        }//ends .Amber
 
         .Nathan-1{
             grid-area: two;
 
             img{
-                box-shadow: 15px 15px @accent-color1-1,
-                            8px 8px @accent-color1;
-                margin-bottom: 10%;
+                .aboutus-img-r(@accent-color1, @accent-color3-3);
 
-                @media(max-width:500px){
+                @media @phone{
                     box-shadow: 5px 5px @accent-color1;
-                }
-            }
+                }//ends @media
+            }//ends img
 
             h2{
-                background-color: @accent-color2-2;
-            }
+                background-color: @accent-color2;
+                box-shadow:  @shadow-r;
+            }//ends h2
     
             p {
-                background-color: @accent-color2-2;
-            }
-        }
+                background-color: @accent-color2;
+                box-shadow:  @shadow-r;
+                
+                i{
+                    color: @accent-color3-3;
+                }//ends i
+            }//ends p
+        }//ends .Nathan-1
 
         .Yannick{
             grid-area: three;
             margin-bottom: 10%;
 
             img{
-                box-shadow: -15px 15px @accent-color1-1,
-                            -8px 8px @accent-color1;
-                margin-bottom: 10%;
+                .aboutus-img-l(@accent-color1, @accent-color3-3);
 
-                @media(max-width:500px){
+                @media @phone{
                     box-shadow: -5px 5px @accent-color2-2;
-                }
-            }
+                }//ends @media
+            }//ends img
 
             h2{
-                background-color: @accent-color3-3;
-            }
+                background-color: @accent-color3;
+                box-shadow:  @shadow-l;
+            }//ends h2
     
             p {
-                background-color: @accent-color3-3;
-            }
-        }
+                background-color: @accent-color3;
+                box-shadow:  @shadow-l;
+
+                i{
+                    color: @accent-color2;
+                }//ends i
+            }//ends p
+        }//ends .Yannick
 
         .Afia{
             grid-area: four;
 
             img{
-                box-shadow: 15px 15px @accent-color1-1,
-                            8px 8px @accent-color1;
-                margin-bottom: 10%;
+                .aboutus-img-r(@accent-color1, @accent-color3-3);
 
-                @media(max-width:500px){
+                @media @phone{
                     box-shadow: 5px 5px @accent-color2;
-                }
-            }
+                }//ends @media
+            }//ends img
 
             h2{
-                background-color: @accent-color1-1;
-            }
+                background-color: @accent-color1;
+                box-shadow:  @shadow-r;
+            }//ends h2
     
             p {
-                background-color: @accent-color1-1;
-            }
-        }
+                background-color: @accent-color1;
+                box-shadow:  @shadow-r;
+
+                i{
+                    color: @accent-color3;
+                }//ends i
+            }//ends p
+        }//ends .Afia
 
         .Jasmine{
             grid-area: five;
             margin-bottom: 10%;
 
             img{
-                box-shadow: -15px 15px @accent-color1-1,
-                            -8px 8px @accent-color1;
-                margin-bottom: 10%;
+                .aboutus-img-l(@accent-color1, @accent-color3-3);
 
-                @media(max-width:500px){
+                @media @phone{
                     box-shadow: -5px 5px @accent-color3-3;
-                }
-            }
+                }//ends @media
+            }//ends img
 
             h2{
-                background-color: @accent-color1-1;
-            }
+                background-color: @accent-color2;
+                box-shadow:  @shadow-l;
+            }//ends h2
     
             p {
-                background-color: @accent-color1-1;
-            }
-        }
+                background-color: @accent-color2;
+                box-shadow:  @shadow-l;
+
+                i{
+                    color: @accent-color3-3;
+                }//ends i
+            }//ends p
+        }//ends .Jasmine
 
         .Nathan-2{
             grid-area: six;
 
             img{
-                box-shadow: 15px 15px @accent-color1-1,
-                            8px 8px @accent-color1;
-                margin-bottom: 10%;
+                .aboutus-img-r(@accent-color1, @accent-color3-3);
 
-                @media(max-width:500px){
+                @media @phone{
                     box-shadow: 5px 5px @accent-color3;
-                }
-            }
+                }//ends @media
+            }//ends img
         
             h2{
-                background-color: @accent-color2-2;
-            }
+                background-color: @accent-color3;
+                box-shadow:  @shadow-r;
+            }//ends h2
     
             p {
-                background-color: @accent-color2-2;
-            }
-        }
+                background-color: @accent-color3;
+                box-shadow:  @shadow-r;
+
+                i{
+                    color: @accent-color2;
+                }//ends i
+            }//ends p
+        }//ends .Nathan-2
 
         .Will{
             grid-area: seven;
 
             img{
-                box-shadow: -15px 15px @accent-color1-1,
-                            -8px 8px @accent-color1;
-                margin-bottom: 10%;
+                .aboutus-img-l(@accent-color1, @accent-color3-3);
 
-                @media(max-width:500px){
+                @media @phone{
                     box-shadow: -5px 5px @accent-color1-1;
-                }
-            }
+                }//ends @media
+            }//ends img
 
             h2{
-                background-color: @accent-color3-3;
-            }
+                background-color: @accent-color1;
+                box-shadow:  @shadow-l;
+            }//ends h2
     
             p {
-                background-color: @accent-color3-3;
-            }
-        }
+                background-color: @accent-color1;
+                box-shadow:  @shadow-l;
+
+                i{
+                    color: @accent-color3;
+                }//ends i
+            }//ends p
+        }//ends .Will
 
 
 
 
-}
+}//ends #about
 
 
 
