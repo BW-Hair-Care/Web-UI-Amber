@@ -501,6 +501,7 @@ footer p a {
 }
 .middle .box:hover .icon {
   transform: translateY(-100%);
+  cursor: crosshair;
 }
 .middle .box:hover .icon .fa-map-marker-alt,
 .middle .box:hover .icon .fa-phone,
@@ -513,6 +514,7 @@ footer p a {
 }
 .middle .box:hover .details {
   transform: translateY(0);
+  cursor: crosshair;
 }
 .middle .box .icon {
   display: flex;
@@ -524,6 +526,11 @@ footer p a {
   letter-spacing: 15;
   transition: 0.5s;
   padding-right: 5%;
+}
+@media (max-width: 500px) {
+  .middle .box .icon {
+    font-size: 1.5rem;
+  }
 }
 .middle .box .icon .fa-map-marker-alt,
 .middle .box .icon .fa-phone,
@@ -543,6 +550,11 @@ footer p a {
   transform: translateY(100%);
   transition: 0.5s;
   font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .middle .box .details {
+    font-size: 1.5rem;
+  }
 }
 .middle .box .details .fa-globe-americas {
   padding-right: 6%;
@@ -587,7 +599,7 @@ footer p a {
   text-align: center;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
-  grid-template-areas: "one one . ." "one one two two" "three three two two" "three three four four" "five five four four" "five five six six" "seven seven six six" "seven seven . .";
+  grid-template-areas: "one one eight eight" "one one two two" "three three two two" "three three four four" "five five four four" "five five six six" "seven seven six six" "seven seven . .";
 }
 #about img {
   max-width: 60%;
@@ -777,4 +789,8 @@ footer p a {
 }
 #about .Will i {
   color: tan;
+}
+#about .eight {
+  grid-area: eight;
+  margin-bottom: 15%;
 }

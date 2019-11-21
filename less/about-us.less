@@ -38,6 +38,7 @@
 
         &:hover .icon{
             transform: translateY(-100%);
+            cursor: crosshair;
         
             .fa-map-marker-alt, .fa-phone, .fa-paper-plane{
                 transform: translateY(100%);
@@ -50,8 +51,8 @@
 
         &:hover .details{
             transform: translateY(0);
-
-        }
+            cursor: crosshair;
+        }//ends hover
                 
         .icon{
             display: flex;
@@ -63,6 +64,10 @@
             letter-spacing: 15;
             transition: 0.5s;
             padding-right: 5%;
+
+            @media @phone{
+                font-size: 1.5rem;
+            }
 
             .fa-map-marker-alt, .fa-phone, .fa-paper-plane{
                 padding-right: 10%;
@@ -83,16 +88,20 @@
             transition: 0.5s;
             font-size: 2.5rem;
 
+            @media @phone{
+                font-size: 1.5rem;
+            }
+
             .fa-globe-americas{
                 padding-right: 6%;
-            }
-        }
+            }//ends fa
+        }//ends .details
 
 
 
-    }
+    }//ends box
+}//ends .middle
 
-}
 
     /*
     h1{
@@ -182,7 +191,7 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     grid-template-areas:
-        "one one . ."
+        "one one eight eight"
         "one one two two"
         "three three two two"
         "three three four four"
@@ -338,6 +347,11 @@
                     color: @accent-color3;
                 }//ends i
         }//ends .Will
+
+        .eight{
+            grid-area: eight;
+            margin-bottom: 15%;
+        }
 
 
 
