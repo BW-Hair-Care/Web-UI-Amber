@@ -150,8 +150,13 @@ h2 {
   font-family: 'Cormorant Infant', serif;
 }
 h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: 'Codystar', cursive;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 h4 {
   font-size: 2rem;
@@ -202,6 +207,7 @@ header nav {
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 50%;
+  align-items: center;
 }
 header nav a {
   color: rgba(0, 0, 0, 0.678);
@@ -234,14 +240,63 @@ header img {
   max-width: 20%;
 }
 footer {
-  margin: 10% auto 5%;
-}
-footer p {
+  display: flex;
+  flex-direction: row;
+  background-color: mistyrose;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: 10% auto 0;
+  padding: 2% 0 4%;
+  border-top: 1px dotted tan;
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  background-color: mistyrose;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  align-items: center;
+}
+footer .footer-nav a {
+  letter-spacing: 2px;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+footer .footer-nav a:hover {
+  background-color: rgba(210, 180, 140, 0.616);
+}
+@media (max-width: 500px) {
+  footer .footer-nav a {
+    font-size: 1rem;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+footer .footer-right {
+  width: 30%;
+}
+footer .footer-right p {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.678);
+}
+@media (max-width: 500px) {
+  footer .footer-right p {
+    font-size: 1rem;
+  }
+}
+footer .footer-right p a {
   font-size: 1.5rem;
 }
-footer p a {
-  font-size: 1.5rem;
+@media (max-width: 500px) {
+  footer .footer-right p a {
+    font-size: 1rem;
+  }
 }
 .header-content {
   display: flex;

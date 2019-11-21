@@ -1,13 +1,52 @@
 footer{
-    margin: 10% auto 5%;
+    .generalSetting(row, @accent-color1, center, 10% auto 0, 2% 0 4%);
+    border-top: 1px dotted @accent-color3;
 
-    p{
-    text-align: center;
-    font-size: 1.5rem;
-
+    .footer-nav{
+        .generalSetting(row, @accent-color1, center, auto, 0);
+       width: 70%;
+       align-items: center;
+        
         a{
+            letter-spacing: 2px;
+            margin-right: 5%;
+            margin-left: 5%;
             font-size: 1.5rem;
+            border-radius: 10px;
+
+            &:hover{
+                background-color: @accent-color3-3;
+            }
+
+            @media @phone{
+                font-size: 1rem;
+                padding-right: 2%;
+                padding-left: 2%;
+            }//ends @media
         }//ends a
-    }//ends p
+    }//ends nav
+
+    .footer-right{
+        width: 30%;
+
+        p{
+        font-size: 1.5rem;
+        color: @text-color;
+
+        @media @phone{
+            font-size: 1rem;
+        }//ends @media
+
+            a{
+                font-size: 1.5rem;
+
+                @media @phone{
+                    font-size: 1rem;
+                }//ends @media
+            }//ends a
+        }//ends p
+    }//ends .footer-right
+
+    
 }//ends footer
 
