@@ -358,8 +358,9 @@ footer p a {
   }
 }
 #top-row h3 {
-  padding-bottom: 10%;
-  color: tan;
+  padding-bottom: 5%;
+  color: rgba(0, 0, 0, 0.678);
+  text-shadow: -3px 3px rgba(210, 180, 140, 0.616);
 }
 @media (max-width: 500px) {
   #top-row h3 {
@@ -426,8 +427,9 @@ footer p a {
   }
 }
 #bottom-row h3 {
-  padding-bottom: 10%;
-  color: tan;
+  padding-bottom: 5%;
+  color: rgba(0, 0, 0, 0.678);
+  text-shadow: -3px 3px rgba(210, 180, 140, 0.616);
 }
 @media (max-width: 500px) {
   #bottom-row h3 {
@@ -668,11 +670,6 @@ footer p a {
   box-shadow: 8px 8px rgba(210, 180, 140, 0.616), 15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
-@media (max-width: 500px) {
-  #about .Nathan-1 img {
-    box-shadow: 5px 5px mistyrose;
-  }
-}
 #about .Nathan-1 h2,
 #about .Nathan-1 h4,
 #about .Nathan-1 p {
@@ -689,11 +686,6 @@ footer p a {
 #about .Yannick img {
   box-shadow: -8px 8px rgba(210, 180, 140, 0.616), -15px 15px blanchedalmond;
   margin-bottom: 10%;
-}
-@media (max-width: 500px) {
-  #about .Yannick img {
-    box-shadow: -5px 5px rgba(255, 235, 205, 0.651);
-  }
 }
 #about .Yannick h2,
 #about .Yannick h4,
@@ -712,11 +704,6 @@ footer p a {
   box-shadow: 8px 8px rgba(210, 180, 140, 0.616), 15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
-@media (max-width: 500px) {
-  #about .Afia img {
-    box-shadow: 5px 5px blanchedalmond;
-  }
-}
 #about .Afia h2,
 #about .Afia h4,
 #about .Afia p {
@@ -734,11 +721,6 @@ footer p a {
   box-shadow: -8px 8px rgba(210, 180, 140, 0.616), -15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
-@media (max-width: 500px) {
-  #about .Jasmine img {
-    box-shadow: -5px 5px rgba(210, 180, 140, 0.616);
-  }
-}
 #about .Jasmine h2,
 #about .Jasmine h4,
 #about .Jasmine p {
@@ -755,11 +737,6 @@ footer p a {
   box-shadow: 8px 8px rgba(210, 180, 140, 0.616), 15px 15px blanchedalmond;
   margin-bottom: 10%;
 }
-@media (max-width: 500px) {
-  #about .Nathan-2 img {
-    box-shadow: 5px 5px tan;
-  }
-}
 #about .Nathan-2 h2,
 #about .Nathan-2 h4,
 #about .Nathan-2 p {
@@ -775,11 +752,6 @@ footer p a {
 #about .Will img {
   box-shadow: -8px 8px rgba(210, 180, 140, 0.616), -15px 15px blanchedalmond;
   margin-bottom: 10%;
-}
-@media (max-width: 500px) {
-  #about .Will img {
-    box-shadow: -5px 5px rgba(255, 228, 225, 0.575);
-  }
 }
 #about .Will h2,
 #about .Will h4,
