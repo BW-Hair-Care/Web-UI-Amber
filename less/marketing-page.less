@@ -1,5 +1,7 @@
 .header-content{
     .generalSetting(column, @accent-color1, center, 3% auto, 3%);
+    border-bottom: 1px dotted @accent-color3;
+    border-top: 1px dotted @accent-color3;
 
     h1{
         color: @text-color;
@@ -114,17 +116,22 @@
 
     .section1{
        .sectionSetting();
-       
 
-       @media @phone{
+       &:hover{
+           .hoverSetting(@accent-color3);
+        }//ends hover
+        
+        @media @phone{
         width: 90%;
-    }
-
-       
-    }
+        }//ends @media
+    }//ends .section1
 
     .section2{
         .sectionSetting();
+
+        &:hover{
+            .hoverSetting(@accent-color1);
+         }//ends hover
 
         @media @phone{
             width: 90%;
@@ -133,6 +140,10 @@
 
     .section3 {
         .sectionSetting();
+
+        &:hover{
+            .hoverSetting(@accent-color3);
+         }//ends hover
 
         @media @phone{
             width: 90%;
@@ -177,6 +188,10 @@
     .section4{
         .sectionSetting();
 
+        &:hover{
+            .hoverSetting(@accent-color1);
+         }//ends hover
+
        @media @phone{
            width: 90%;
        }
@@ -187,6 +202,10 @@
     .section5{
         .sectionSetting();
 
+        &:hover{
+            .hoverSetting(@accent-color3);
+         }//ends hover
+
         @media @phone{
             width: 90%;
         }
@@ -194,6 +213,10 @@
 
     .section6{
         .sectionSetting();
+
+        &:hover{
+            .hoverSetting(@accent-color1);
+         }//ends hover
 
         @media @phone{
             width: 90%;

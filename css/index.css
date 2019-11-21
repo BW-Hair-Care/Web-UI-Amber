@@ -180,8 +180,7 @@ img {
 }
 a {
   text-decoration: none;
-  font-size: 2rem;
-  text-align: right;
+  font-size: 1.75rem;
   color: rgba(0, 0, 0, 0.678);
 }
 @media (max-width: 500px) {
@@ -222,6 +221,7 @@ header span {
   background-color: mistyrose;
   padding: 2%;
   border-radius: 8px;
+  border: 1px dotted tan;
   align-self: center;
   box-shadow: -5px 5px rgba(210, 180, 140, 0.616);
 }
@@ -230,6 +230,7 @@ header span:hover {
 }
 header span a {
   font-weight: bold;
+  text-align: right;
   letter-spacing: 1;
   color: #bda280;
 }
@@ -258,28 +259,27 @@ footer .footer-nav {
   text-align: center;
   margin: auto;
   padding: 0;
-  width: 70%;
+  width: 50%;
   align-items: center;
 }
 footer .footer-nav a {
   letter-spacing: 2px;
-  margin-right: 5%;
-  margin-left: 5%;
   font-size: 1.5rem;
-  border-radius: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-bottom: 1%;
 }
 footer .footer-nav a:hover {
-  background-color: rgba(210, 180, 140, 0.616);
+  border-bottom: 1px dotted tan;
 }
 @media (max-width: 500px) {
   footer .footer-nav a {
     font-size: 1rem;
-    padding-right: 2%;
-    padding-left: 2%;
   }
 }
 footer .footer-right {
-  width: 30%;
+  width: 40%;
+  padding-right: 3%;
 }
 footer .footer-right p {
   font-size: 1.5rem;
@@ -307,6 +307,8 @@ footer .footer-right p a {
   text-align: center;
   margin: 3% auto;
   padding: 3%;
+  border-bottom: 1px dotted tan;
+  border-top: 1px dotted tan;
 }
 .header-content h1 {
   color: rgba(0, 0, 0, 0.678);
@@ -429,6 +431,11 @@ footer .footer-right p a {
   width: 25%;
   text-align: center;
 }
+#top-row .section1:hover {
+  padding: 2%;
+  border: 2px dotted tan;
+  box-shadow: -8px 8px rgba(0, 0, 0, 0.678), -15px 15px tan;
+}
 @media (max-width: 500px) {
   #top-row .section1 {
     width: 90%;
@@ -438,6 +445,11 @@ footer .footer-right p a {
   width: 25%;
   text-align: center;
 }
+#top-row .section2:hover {
+  padding: 2%;
+  border: 2px dotted tan;
+  box-shadow: -8px 8px rgba(0, 0, 0, 0.678), -15px 15px mistyrose;
+}
 @media (max-width: 500px) {
   #top-row .section2 {
     width: 90%;
@@ -446,6 +458,11 @@ footer .footer-right p a {
 #top-row .section3 {
   width: 25%;
   text-align: center;
+}
+#top-row .section3:hover {
+  padding: 2%;
+  border: 2px dotted tan;
+  box-shadow: -8px 8px rgba(0, 0, 0, 0.678), -15px 15px tan;
 }
 @media (max-width: 500px) {
   #top-row .section3 {
@@ -498,6 +515,11 @@ footer .footer-right p a {
   width: 25%;
   text-align: center;
 }
+#bottom-row .section4:hover {
+  padding: 2%;
+  border: 2px dotted tan;
+  box-shadow: -8px 8px rgba(0, 0, 0, 0.678), -15px 15px mistyrose;
+}
 @media (max-width: 500px) {
   #bottom-row .section4 {
     width: 90%;
@@ -507,6 +529,11 @@ footer .footer-right p a {
   width: 25%;
   text-align: center;
 }
+#bottom-row .section5:hover {
+  padding: 2%;
+  border: 2px dotted tan;
+  box-shadow: -8px 8px rgba(0, 0, 0, 0.678), -15px 15px tan;
+}
 @media (max-width: 500px) {
   #bottom-row .section5 {
     width: 90%;
@@ -515,6 +542,11 @@ footer .footer-right p a {
 #bottom-row .section6 {
   width: 25%;
   text-align: center;
+}
+#bottom-row .section6:hover {
+  padding: 2%;
+  border: 2px dotted tan;
+  box-shadow: -8px 8px rgba(0, 0, 0, 0.678), -15px 15px mistyrose;
 }
 @media (max-width: 500px) {
   #bottom-row .section6 {
