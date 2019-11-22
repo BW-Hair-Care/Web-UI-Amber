@@ -1,9 +1,49 @@
 footer{
-    margin: 10% auto 5%;
+    .generalSetting(row, @accent-color1, center, 10% auto 0, 2% 0 4%);
+    border-top: 1px dotted @accent-color3;
 
-    p{
-    text-align: center;
-    font-size: 1.5rem;
-   
-    }
-}
+    .footer-nav{
+        .generalSetting(row, @accent-color1, center, auto, 0);
+       width: 50%;
+       align-items: center;
+        
+        a{
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            margin-left: 3%;
+            margin-right: 3%;
+            padding-bottom: 1%;
+
+            &:hover{
+                border-bottom: 1px dotted @accent-color3;
+            }//ends hover
+
+            @media @phone{
+                font-size: 1rem;
+            }//ends @media
+        }//ends a
+    }//ends nav
+
+    .footer-right{
+        width: 40%;
+        padding-right: 3%;
+
+        p{
+        font-size: 1.5rem;
+        color: @text-color;
+
+        @media @phone{
+            font-size: 1rem;
+        }//ends @media
+
+            a{
+                font-size: 1.5rem;
+
+                @media @phone{
+                    font-size: 1rem;
+                }//ends @media
+            }//ends a
+        }//ends p
+    }//ends .footer-right
+}//ends footer
+

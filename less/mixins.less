@@ -1,16 +1,65 @@
 
-.custom-btn(@bg-color, @size, @font-color, @height){
+.custom-btn(@bg-color, @size, @font-color){
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background-color: @bg-color;
-    cursor: pointer;
+    cursor: crosshair;
     width: @size;
-    height: @height;
-    font-size: 1.75rem;
-    font-weight: bold;
-    border-radius: 15px;
+    font-family: 'Codystar', cursive;
+    font-size: 4rem;
+    font-style: bolder;
+    border-radius: 30px;
+    border: 4.5px solid @accent-color3;
+    box-shadow: -10px 10px @text-color;
     color: @font-color;
+    padding: 2%;
+}
+
+.generalSetting(@direction, @color, @justify, @margin, @padding){
+    display: flex;
+    flex-direction: @direction;
+    background-color: @color;
+    justify-content: @justify;
+    align-items: center;
+    text-align: center;
+    margin: @margin;
+    padding: @padding
+}
+
+//Marketing Page Settings
+.sectionSetting(){
+    width: 25%;
+    text-align: center;
+}
+
+.imgSetting(){
+    max-width: 40%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+.hoverSetting(@color){
+    padding: 2%;
+    border: 2px dotted @accent-color3;
+    box-shadow: -8px 8px @text-color,
+               -15px 15px @color;
+}
+
+//About Us Page Settings
+.aboutus-img-l(@accent-color1, @accent-color3-3){
+    box-shadow:  -8px 8px @accent-color3-3, 
+                -15px 15px @accent-color2;
+                
+                
+    margin-bottom: 10%;
+}
+
+.aboutus-img-r(@accent-color1, @accent-color3-3){
+    box-shadow:  8px 8px @accent-color3-3, 
+                15px 15px @accent-color2;
+    margin-bottom: 10%;
 }
 
 

@@ -3,27 +3,57 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 4% auto 1% auto;
 
+    @media @phone{
+        margin-top: 5%;
+    }//ends @media
+
+    nav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 50%;
+        align-items: center;
+
+        a{
+            color: @text-color;
+        }
+
+            @media @phone{
+                width: 70%;
+                font-size: 1rem;
+            }//ends @media    
+    }//ends nav
+
+    span{
+        background-color: @accent-color1;
+        padding: 2%;
+        border-radius: 8px;
+        border: 1px dotted @accent-color3;
+        align-self: center;
+        box-shadow: -5px 5px @accent-color3-3;
+
+        &:hover{
+            background-color: rgb(189, 162, 128);
+        }//ends hover
+        
+        a{
+            font-weight: bold;
+            text-align: right;
+            letter-spacing: 1;
+            color: rgb(189, 162, 128);
+
+
+            &:hover{
+                color: @accent-color1;
+            }//ends hover
+        }//ends a
+    }//ends span
+
     img{
-        width: 20%;
-        
-    }
+        max-width: 20%;
+    }//ends img
+}//ends header
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-    
-    
-    a{
-        text-decoration: none;
-        font-size: 2rem;
-        color: @navcolor;
-        text-align: right;
-        
-    }
-}
-
-}

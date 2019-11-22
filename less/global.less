@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: @bg-color;
 }
 
 html, body {
@@ -16,7 +17,7 @@ html, body {
 
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: 'Calistoga', cursive;
 }
 
@@ -27,14 +28,18 @@ h2 {
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: 'Codystar', cursive;
+
+  @media @phone{
+    font-size: 2.5rem;
+  }
 }
 
 h4 {
   font-size: 2rem;
   padding-bottom: 10px;
-  font-family: 'arial', sans-serif;
+  font-family: 'Cormorant Infant', serif;
 }
 
 p {
@@ -53,4 +58,16 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: @text-color;
+
+
+  @media @phone{
+      font-size: 1.5rem;
+  }
+  
 }
