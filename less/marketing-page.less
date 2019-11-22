@@ -26,8 +26,8 @@
             border-top: 5px solid @accent-color3;
             border-style: double;
             line-height: 2;
-        }
-    }
+        }//ends @media
+    }//ends h2
 
     .signup{
         .custom-btn(@bg-color, 40%, @text-color);
@@ -47,19 +47,16 @@
                         0 0 0 30px rgba(210, 180, 140, 0.15),
                         0 0 0 15px rgba(210, 180, 140, 0.15);
         
-        } 
+        }//ends hover
 
         @media @phone{
             font-size: 2rem;
             padding: 1%;
             border-radius: 10px;
             margin-bottom: 3%;
-        }
-
-    }
-}
-
- 
+        }//ends @media
+    }//ends .signup
+}//ends .header-content
 
 .gallery{
     display: flex;
@@ -73,11 +70,9 @@
         @media (max-width: 499px){
             height: 200px;
             max-width: 32%;
-        }
-    }
-}
-
-
+        }//ends @media
+    }//ends img
+}//ends .gallery
 
 #top-row{
     .generalSetting(row, none, space-between, auto, 0);
@@ -88,7 +83,7 @@
     @media @phone{
         display: flex;
         flex-direction: column;
-    }
+    }//ends @media
 
     img{
         .imgSetting();
@@ -96,23 +91,22 @@
         @media @phone{
             max-width: 20%;
             padding-bottom: 5%;
-        }
-    }
+        }//ends @media
+    }//ends img
 
     h3{
         padding-bottom: 5%;
         color: @text-color;
         text-shadow: -3px 3px @accent-color3-3;
         
-
         @media @phone{
             padding-bottom: 5%;
-        }
-    }
+        }//ends @media
+    }//ends h3
 
     p{
         text-align: justify;
-    }
+    }//ends p
 
     .section1{
        .sectionSetting();
@@ -135,8 +129,8 @@
 
         @media @phone{
             width: 90%;
-        }
-    }
+        }//ends @media
+    }//ends .section2
 
     .section3 {
         .sectionSetting();
